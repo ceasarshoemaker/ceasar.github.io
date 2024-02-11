@@ -1,0 +1,55 @@
+<html>
+<style>
+    h1,h2,h3,h4,h5,h6{
+        text-align: center;
+        font-weight: normal;
+    }
+    p{
+        text-align: center;
+    }
+    h1{
+        font-size:40;
+    }
+    h2{
+        font-size:25;
+    }
+    .title{
+        text-align: center;
+    }
+    .footer{
+        text-align: center;
+    }
+</style>
+
+<script>
+    function num(){
+        var num=prompt("What is your favorite number?")
+        document.getElementById("nump").innerHTML="NICE CHOICE, "+num+" IS A GREAT NUMBER!"
+    }
+    function getname(){
+        var name=prompt("What is your name?")
+        document.getElementById("namep").innerHTML="nice to meet you "+name+", my name is cedar!"
+    }
+    function reset(){
+        document.getElementById("nump").innerHTML=""
+        document.getElementById("namep").innerHTML=""
+    }
+</script>
+
+<div class="title" id="title">
+    <h1>WELOME TO THIS WEBSITE</h1>
+    <h2>By me, ceasarshoemaker :)</h2>
+    <button type="button" onclick="num()">input your favorite number!</button>
+    <button type="button" onclick="getname()">input yout name!</button>
+</div>
+
+<p id="nump"></p>
+<p id="namep"></p>
+<br><br>
+
+<div class= "title" id="footer">
+<button type="button" onclick="reset()">Reset</button>
+<p>Thank you for visiting my website!</p>
+</div>
+
+</html>
